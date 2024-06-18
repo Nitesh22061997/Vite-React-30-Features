@@ -7,10 +7,12 @@ import Form from './components/Form'
 import HelloWorld from './components/HelloWorld'
 import ImageUploader from './components/ImageUploader'
 import List from './components/List'
+import LoginForm from './components/LoginForm'
 import RandomJoke from './components/RandomJoke'
 import Routing from './components/Routing'
 import TodoList from './components/TodoList'
 import Toggle from './components/Toggle'
+import Weather from './components/Weather'
 
 function App() {
 
@@ -28,7 +30,9 @@ function App() {
         {/* <BgColor /> */}
         {/* <Routing /> */}
         {/* <RandomJoke /> */}
-        <ImageUploader />
+        {/* <ImageUploader /> */}
+        {/* <LoginForm /> */}
+        <Weather />
       </div>
     </>
   )
