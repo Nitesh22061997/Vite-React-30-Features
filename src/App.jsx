@@ -1,8 +1,11 @@
 import './App.css'
+import APIFetch from './components/APIFetch'
+import CountTime from './components/CountTime'
 import Counter from './components/Counter'
 import Form from './components/Form'
 import HelloWorld from './components/HelloWorld'
 import List from './components/List'
+import TodoList from './components/TodoList'
 import Toggle from './components/Toggle'
 
 function App() {
@@ -14,7 +17,10 @@ function App() {
         {/* <Counter /> */}
         {/* <Form /> */}
         {/* <List /> */}
-        <Toggle />
+        {/* <Toggle /> */}
+        {/* <APIFetch /> */}
+        {/* <CountTime /> */}
+        <TodoList />
       </div>
     </>
   )
