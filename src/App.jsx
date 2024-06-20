@@ -8,14 +8,17 @@ import HelloWorld from './components/HelloWorld'
 import ImageUploader from './components/ImageUploader'
 import List from './components/List'
 import LoginForm from './components/LoginForm'
+import Pagination from './components/Pagination'
 import RandomJoke from './components/RandomJoke'
 import Routing from './components/Routing'
+import SearchBar from './components/SearchBar'
 import TodoList from './components/TodoList'
 import Toggle from './components/Toggle'
 import Weather from './components/Weather'
 
 function App() {
 
+  const items = ["Ghee", "Gh", "Gheeed", "Snacks", "aloo", "bhindi", "fruit", "item1", "item2", "item3"]
   return (
     <>
       <div>
@@ -32,7 +35,9 @@ function App() {
         {/* <RandomJoke /> */}
         {/* <ImageUploader /> */}
         {/* <LoginForm /> */}
-        <Weather />
+        {/* <Weather /> */}
+        {/* <SearchBar items={items} /> */}
+        <Pagination items={items} itemsPerPage={2} />
       </div>
     </>
   )
