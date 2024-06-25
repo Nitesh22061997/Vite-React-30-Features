@@ -4,6 +4,7 @@ import BgColor from './components/BgColor'
 import CountTime from './components/CountTime'
 import Counter from './components/Counter'
 import Form from './components/Form'
+import HamburgerIcon from './components/HamburgerIcon'
 import HelloWorld from './components/HelloWorld'
 import ImageUploader from './components/ImageUploader'
 import List from './components/List'
@@ -12,13 +13,14 @@ import Pagination from './components/Pagination'
 import RandomJoke from './components/RandomJoke'
 import Routing from './components/Routing'
 import SearchBar from './components/SearchBar'
+import SelectColor from './components/SelectColor'
 import TodoList from './components/TodoList'
 import Toggle from './components/Toggle'
 import Weather from './components/Weather'
 
 function App() {
 
-  const items = ["Ghee", "Gh", "Gheeed", "Snacks", "aloo", "bhindi", "fruit", "item1", "item2", "item3"]
+  // const items = ["Ghee", "Gh", "Gheeed", "Snacks", "aloo", "bhindi", "fruit", "item1", "item2", "item3"]
   return (
     <>
       <div>
@@ -37,7 +39,9 @@ function App() {
         {/* <LoginForm /> */}
         {/* <Weather /> */}
         {/* <SearchBar items={items} /> */}
-        <Pagination items={items} itemsPerPage={2} />
+        {/* <Pagination items={items} itemsPerPage={2} /> */}
+        {/* <SelectColor /> */}
+        <HamburgerIcon />
       </div>
     </>
   )
