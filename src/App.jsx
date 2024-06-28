@@ -14,6 +14,9 @@ import RandomJoke from './components/RandomJoke'
 import Routing from './components/Routing'
 import SearchBar from './components/SearchBar'
 import SelectColor from './components/SelectColor'
+import Theme from './components/Theme'
+import ThemeComp from './components/ThemeComp'
+import { ThemeProvider } from './components/ThemeContext'
 import TodoList from './components/TodoList'
 import Toggle from './components/Toggle'
 import Weather from './components/Weather'
@@ -41,7 +44,13 @@ function App() {
         {/* <SearchBar items={items} /> */}
         {/* <Pagination items={items} itemsPerPage={2} /> */}
         {/* <SelectColor /> */}
-        <HamburgerIcon />
+        {/* <HamburgerIcon /> */}
+        <ThemeProvider>
+          <div className='App'>
+            <Theme />
+            <ThemeComp />
+          </div>
+        </ThemeProvider>
       </div>
     </>
   )
